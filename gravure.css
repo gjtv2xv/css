@@ -404,6 +404,14 @@ iframe:hover {
   color: #0f1419;
 }
 
+.masonry-container550 .tweet-box550 .line3,
+.masonry-container550 .tweet-box550 .line3 a {
+  white-space: normal;        /* 折り返しを許可 */
+  overflow-wrap: anywhere;    /* 長い単語やURLを適切に折り返す（推奨） */
+  word-break: break-word;     /* 古いブラウザ向けのフォールバック */
+  hyphens: auto;              /* 英語などでハイフネーション（必要なら） */
+}
+
 .tweet-box550 {
   display: block;
   width: 100%;       
@@ -747,6 +755,7 @@ width:600px;
 
 
 }
+
 
 
 
