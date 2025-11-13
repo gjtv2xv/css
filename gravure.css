@@ -752,9 +752,12 @@ color: rgb(102, 102, 102);
 .introduction {
 
 width:600px;
+white-space: pre-wrap;       /* preserve newlines but allow wrap */
+overflow-wrap: anywhere;  
 
 
 }
+
 
 
 
