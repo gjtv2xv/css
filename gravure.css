@@ -750,12 +750,12 @@ color: rgb(102, 102, 102);
 }
 
 .introduction {
-
-width:600px;
-white-space: pre-wrap;       /* preserve newlines but allow wrap */
-overflow-wrap: anywhere;  
-
-
+  width: 100%;          /* 親要素幅に合わせる */
+  max-width: 600px;     /* 最大幅は600px */
+  white-space: pre-wrap; /* 改行を保持しつつ折り返し */
+  overflow-wrap: break-word; /* 長い単語でも折り返す */
+  box-sizing: border-box; /* paddingがあっても幅に含める */
+  padding: 10px;        /* 余白 */
 }
 
 
