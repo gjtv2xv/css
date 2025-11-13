@@ -1,4 +1,4 @@
-body {
+Iibody {
   font-family: "Arial", sans-serif;
   background-color: #f9f9f9;
   padding: 0;
@@ -749,11 +749,8 @@ color: rgb(102, 102, 102);
   }
 }
 
-.introduction {
-  width: 100%;          /* 親要素幅に合わせる */
+.introduction {
   max-width: 600px;     /* 最大幅は600px */
-  white-space: pre-wrap; /* 改行を保持しつつ折り返し */
-  overflow-wrap: break-word; /* 長い単語でも折り返す */
 }
 
 
