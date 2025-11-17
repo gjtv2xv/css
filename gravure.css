@@ -749,9 +749,32 @@ color: rgb(102, 102, 102);
   }
 }
 
-.introduction {
-  max-width: 600px;     /* 最大幅は600px */
+.introduction {
+
+  max-width: 650px;     /* 最大幅は600px */
 }
+
+
+.tweet-text.collapsed {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+.tweet-toggle {
+  display: inline-block;
+  margin-top: 0px;
+  cursor: pointer;
+  font-size: 11px;   /* 小さく */
+  color: #000;       /* 黒 */
+  opacity: 0.5;      /* 半透明 */
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+
 
 
 
