@@ -29,6 +29,8 @@ Iibody {
   height: auto;
   object-fit: cover;
   flex-shrink: 0;
+
+  display: none;
 }
 
 .card-content {
@@ -773,6 +775,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
