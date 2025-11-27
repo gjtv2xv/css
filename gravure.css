@@ -48,6 +48,14 @@ Iibody {
   margin: 4px 0;
 }
 
+@media screen and (max-width: 600px) {
+  .card img.profile-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;   /* 縦横比 1:1 */
+    object-fit: cover;     /* はみ出す分は自然にトリミング */
+    height: auto;          /* aspect-ratio が管理 */
+  }
+
 .label {
   font-weight: bold;
 }
@@ -551,7 +559,7 @@ iframe:hover {
 }
 
  .sns-icon {
-    width: 15px;   /* PC鬨ｾ蛹�ｽｽ�ｨ驛｢�ｧ�ｽ�ｵ驛｢�ｧ�ｽ�､驛｢�ｧ�ｽ�ｺ */
+    width: 15px;   
     height: auto;
     vertical-align: middle;
     display: inline-block;
@@ -559,7 +567,7 @@ iframe:hover {
 
   @media screen and (max-width: 600px) {
     .sns-icon {
-      width: 15px;  /* 驛｢�ｧ�ｽ�ｹ驛｢譎�ｽｧ�ｭ�ｽ�ｽ鬨ｾ蛹�ｽｽ�ｨ驛｢�ｧ�ｽ�ｵ驛｢�ｧ�ｽ�､驛｢�ｧ�ｽ�ｺ */
+      width: 15px; 
     }
   }
 
@@ -675,17 +683,17 @@ color: rgb(102, 102, 102);
   box-sizing: border-box;
 }
 
-/* 繝帙ヰ繝ｼ蜉ｹ譫� */
+
 .interview-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 5px 12px rgba(0,0,0,0.15);
 }
 
-/* 蟾ｦ�夂判蜒� */
+
 .interview-image {
   width: 100px;
   height: 100px;
-  margin: 10px;   /* 蜈ｨ譁ｹ蜷代↓10px菴咏區 */
+  margin: 10px; 
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -697,7 +705,6 @@ color: rgb(102, 102, 102);
   display: block;
 }
 
-/* 蜿ｳ�壹ユ繧ｭ繧ｹ繝� */
 .interview-text {
   flex: 1;
   padding-right: 12px;
@@ -707,7 +714,7 @@ color: rgb(102, 102, 102);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;  /* 鬮倥＆繧定ｶ�∴縺溘ｉ髫�縺� */
+  overflow: hidden;  
 }
 
 .title {
@@ -718,7 +725,7 @@ color: rgb(102, 102, 102);
   
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* 譛螟ｧ3陦後〒逵∫払 */
+  -webkit-line-clamp: 3; 
   overflow: hidden;
   text-overflow: ellipsis;
   line-height: 1.5;
@@ -738,7 +745,7 @@ color: rgb(102, 102, 102);
   text-decoration: none;
 }
 
-/* 繧ｹ繝槭�蟇ｾ蠢� */
+
 @media screen and (max-width: 480px) {
   .interview-text {
     font-size: 9px;
@@ -775,9 +782,6 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
-
-
-
 
 
 
