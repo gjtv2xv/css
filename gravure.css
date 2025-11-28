@@ -1,3 +1,52 @@
+.company-logos-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+  overflow-x: auto;
+  padding: 8px 0 0 0;
+}
+
+/* 全ロゴに共通：切れない・比率維持・最大サイズ制御 */
+.logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* ← 切れ防止、比率維持 */
+}
+
+/* ホバー浮き上がり */
+.logo-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* ロゴコンテナのサイズ（ここで自由に調整可能） */
+  width: var(--w);
+  height: var(--h);
+
+  transition: transform 0.15s ease;
+}
+
+.logo-link:hover {
+  transform: translateY(-3px);
+}
+
+/* 個別ロゴサイズ（自由調整可能） */
+.amazon       { --w: 50px; --h: 20px; }
+.rakuten      { --w: 50px; --h: 20px; }
+.yodobashi    { --w: 80px; --h: 28px; }
+.dmm-mono     { --w: 60px; --h: 20px; }
+.dmm-book     { --w: 70px; --h: 20px; }
+
+/* スマホ時：幅だけ変更しても切れない */
+@media (max-width: 480px) {
+  .logo-link {
+    --w: 60px;
+    --h: 24px;
+  }
+}
+
 body {
   font-family: "Arial", sans-serif;
   background-color: #f9f9f9;
@@ -774,6 +823,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
