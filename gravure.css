@@ -4,7 +4,7 @@
   gap: 20px;
   align-items: center;
   overflow-x: auto;
-  padding: 8px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 /* 全ロゴに共通：切れない・比率維持・最大サイズ制御 */
@@ -33,11 +33,11 @@
 }
 
 /* 個別ロゴサイズ（自由調整可能） */
-.amazon       { --w: 50px; --h: 20px; }
-.rakuten      { --w: 50px; --h: 20px; }
-.yodobashi    { --w: 80px; --h: 28px; }
-.dmm-mono     { --w: 60px; --h: 20px; }
-.dmm-book     { --w: 70px; --h: 20px; }
+.amazon       { --w: 65px; --h: 30px; }
+.rakuten      { --w: 65px; --h: 30px; }
+.yodobashi    { --w: 80px; --h: 30px; }
+.dmm-mono     { --w: 75px; --h: 30px; }
+.dmm-book     { --w: 85px; --h: 30px; }
 
 /* スマホ時：幅だけ変更しても切れない */
 @media (max-width: 480px) {
@@ -751,6 +751,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
