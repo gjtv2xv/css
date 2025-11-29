@@ -1,0 +1,122 @@
+/* ---------------------------
+   ラッパー
+--------------------------- */
+.name-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;      /* 画面幅いっぱい */
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  border-radius: 0;
+}
+
+/* ---------------------------
+   画像ラッパー
+--------------------------- */
+.name-image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;  /* 縦横比 */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* 画像 */
+.name-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;    /* 切れずにフィット */
+  display: block;
+}
+
+/* ---------------------------
+   横書きテキスト
+--------------------------- */
+.name-image-text {
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.name-text-group {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-weight: bold;
+  opacity: 0.95;
+  padding: 15px;
+}
+
+.name-furigana {
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.name-name {
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+/* ---------------------------
+   縦書きテキスト
+--------------------------- */
+.name-vertical-text {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.name-vertical-text-group {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fff;          /* 白文字 */
+}
+
+.name-vertical-furigana {
+  font-size: 1.5em;
+  line-height: 0.6;
+}
+
+.name-vertical-name {
+  font-size: 3em;
+}
+
+/* ---------------------------
+   キャッチコピー
+--------------------------- */
+.name-catchcopy {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.name-catchcopy-group {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ---------------------------
+   レスポンシブ
+--------------------------- */
+@media screen and (max-width: 600px) {
+  .name-text-group,
+  .name-vertical-text-group,
+  .name-catchcopy-group {
+    transform: scale(0.7);
+    transform-origin: top right;
+    width: max-content;
+    white-space: nowrap;
+  }
+}
