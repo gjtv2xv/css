@@ -1,3 +1,9 @@
+/* hspace="5" を無視して左右余白を消す */
+img[hspace="5"] {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .company-logos-row {
   display: flex;
   flex-wrap: nowrap;
@@ -751,6 +757,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
