@@ -1,11 +1,13 @@
 
+/* ■ 会社ロゴ列（PC） */
 .company-logos-row {
   display: flex;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 10px;
   align-items: center;
   overflow-x: auto;
   padding: 20px 0 0 0;
+  height: 40px;
 
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
@@ -22,7 +24,7 @@
 }
 
 .logo-link {
-  display: flex;  /* inline-flex → flex に変更（最重要） */
+  display: flex;  /* inline-flex → flex */
   align-items: center;
   justify-content: center;
   width: var(--w);
@@ -31,21 +33,115 @@
 }
 
 .logo-link:hover {
-  transform: translateY(-3px);
+  transform: translateY(0px);  /* PCではホバーで動かすなら変更可能 */
 }
 
+/* 各ロゴサイズ */
 .amazon       { --w: 65px; --h: 30px; }
 .rakuten      { --w: 65px; --h: 30px; }
 .yodobashi    { --w: 80px; --h: 30px; }
 .dmm-mono     { --w: 75px; --h: 30px; }
 .dmm-book     { --w: 85px; --h: 30px; }
 
-@media (max-width: 480px) {
+/* ■ タブレットサイズ調整 */
+@media (max-width: 600px) {
+
   .logo-link {
-    --w: 58px;   /* 60 → 58 (確実にスクロールが消える) */
+    --w: 58px;
     --h: 24px;
   }
+
+  .company-logos-row {
+    gap: 0px;
+    padding: 0;
+    height: 40px;
+  }
+
+  .company-logos-row::-webkit-scrollbar {
+    display: none;
+  }
+
 }
+
+/* ■ スマホ専用（480px以下） */
+@media (max-width: 480px) {
+
+  /* ロゴホバーアニメーション無効 */
+  .logo-link {
+    transition: none !important;
+    transform: none !important;
+  }
+
+  /* 会社ロゴ列の調整 */
+  .company-logos-row {
+    gap: 0px;
+    padding: 0;
+    height: 40px;
+  }
+
+  /* ロゴ画像 */
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  /* my-info-row（購入情報）の余白詰め */
+  .my-info-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+  }
+
+  .my-info-row img {
+    display: block;
+    height: 1em;
+    vertical-align: middle;
+  }
+
+  .my-date-note {
+    font-size: 0.8em;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .logo-link {
+    transition: none !important;   /* アニメーション無効 */
+    transform: none !important;    /* 元位置に固定 */
+    display: flex !important;      /* 念のため再指定 */
+    align-items: center !important; /* 中央揃え固定 */
+    justify-content: center !important;
+  }
+
+  .logo {
+    display: block !important;      /* 下の余白を消す */
+    margin: 0 !important;
+    vertical-align: middle !important;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .company-logos-row {
+    align-items: center !important; /* 上下中央固定 */
+    gap: 10 !important;              /* 不要な余白削除 */
+    padding: 0 !important;
+    height: 40px !important;        /* 高さ固定 */
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .company-logos-row::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
 
 
 body {
@@ -773,6 +869,7 @@ color: rgb(102, 102, 102);
     padding: 10px 8px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
