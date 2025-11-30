@@ -866,9 +866,10 @@ color: rgb(102, 102, 102);
   .tweet-toggle {
     font-size: 9px;    /* スマホでは少しだけ大きく */
     opacity: 0.75;
-    padding: 4px 3px;  /* タップしやすい領域 */
+    padding: 5px 2px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
