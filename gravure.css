@@ -191,7 +191,7 @@ body {
 
 .tweet-text {
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.4;
 }
 
@@ -752,6 +752,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
