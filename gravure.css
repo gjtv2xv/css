@@ -757,12 +757,21 @@ color: rgb(102, 102, 102);
   display: inline-block;
   margin-top: 0px;
   cursor: pointer;
-  font-size: 11px;   /* 小さく */
+  font-size: 10px;   /* 小さく */
   color: #000;       /* 黒 */
   opacity: 0.5;      /* 半透明 */
   background: none;
   border: none;
   padding: 0;
+}
+
+/* スマホだけに適用：幅480px以下 */
+@media (max-width: 480px) {
+  .tweet-toggle {
+    font-size: 9px;    /* スマホでは少しだけ大きく */
+    opacity: 0.75;
+    padding: 10px 8px;  /* タップしやすい領域 */
+  }
 }
 
 
