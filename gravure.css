@@ -52,7 +52,7 @@
   }
 
   .company-logos-row {
-    gap: 0px;
+    gap: 10px;
     padding: 0;
     height: 40px;
   }
@@ -869,6 +869,7 @@ color: rgb(102, 102, 102);
     padding: 5px 2px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
