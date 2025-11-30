@@ -137,7 +137,7 @@ body {
   color: #0f1419;
 }
 
-.-box {
+.tweet-box {
   display: block;
   width: auto;
   margin-bottom: 10px;
@@ -308,13 +308,13 @@ body {
     font-size: 0.9em;
   }
 
-.-text {
+.tweet-text {
   margin-top: 9px;
   font-size: 9px;
   line-height: 1.2;
 }
 
-.-box {
+.tweet-box {
   padding: 10px;
 }
 
@@ -758,6 +758,7 @@ color: rgb(102, 102, 102);
   border: none;
   padding: 0;
 }
+
 
 
 
