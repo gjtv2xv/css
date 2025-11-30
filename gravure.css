@@ -42,7 +42,7 @@
 .yodobashi    { --w: 80px; --h: 30px; }
 .dmm-mono     { --w: 75px; --h: 30px; }
 .dmm-book     { --w: 85px; --h: 30px; }
-.dmm-tv     { --w: 70px; --h: 30px; }
+.dmm-tv     { --w: 65px; --h: 30px; }
 
 /* ■ タブレット＆スマホ共通（600px以下） */
 @media (max-width: 600px) {
@@ -832,6 +832,7 @@ color: rgb(102, 102, 102);
     padding: 5px 0px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
