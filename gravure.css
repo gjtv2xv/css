@@ -833,18 +833,6 @@ color: rgb(102, 102, 102);
   }
 }
 
-/* YouTube埋め込みのwidth/height属性を強制的に無視し、CSSのレスポンシブ設定を適用 */
-.video-wrapper iframe[width],
-.video-wrapper iframe[height] {
-    /* HTML属性で指定されたwidth/heightを強制的に上書き */
-    width: 100% !important;
-    height: 100% !important;
-}
-
-
-
-
-
 
 
 
