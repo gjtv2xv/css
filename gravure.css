@@ -124,7 +124,7 @@ body {
 .card {
   display: flex;
   flex-direction: row;
-  width: 550px;
+  width: px;
   max-width: 100%;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -255,6 +255,11 @@ body {
 }
 
 .tweet-text2 {
+  margin-top: 13px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.tweet-text-date {
   margin-top: 13px;
   font-size: 13px;
   line-height: 1.4;
@@ -515,9 +520,9 @@ iframe:hover {
   }
 }
 
-.masonry-container550 {
+.masonry-container {
   width: 100%;
-  max-width: 550px;  
+  max-width: px;  
   margin: 0;
   column-count: 1;    
   column-gap: 0;
@@ -832,6 +837,7 @@ color: rgb(102, 102, 102);
     padding: 5px 0px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
