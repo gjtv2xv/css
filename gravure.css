@@ -259,11 +259,6 @@ body {
   font-size: 13px;
   line-height: 1.4;
 }
-.tweet-text-date {
-  margin-top: 13px;
-  font-size: 13px;
-  line-height: 1.4;
-}
 
 .my-card {
   background-color: #fff;
@@ -683,12 +678,6 @@ iframe:hover {
     display: inline-block;
   }
 
-.sns-icon svg {
-  width: 15px;
-  height: 15px;
-  display: inline-block;
-  vertical-align: middle; /* テキスト行に揃える場合など */
-}
 
   @media screen and (max-width: 600px) {
     .sns-icon {
@@ -844,6 +833,7 @@ color: rgb(102, 102, 102);
     padding: 5px 0px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
