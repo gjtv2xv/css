@@ -1,3 +1,19 @@
+.sns-icon-instagram {
+  width: 15px !important;
+  height: 15px !important;
+  max-width: 15px !important;
+  max-height: 15px !important;
+}
+
+@media (max-width: 600px) {
+  .sns-icon-instagram {
+    width: 15px !important;
+    height: 15px !important;
+    max-width: 15px !important;
+    max-height: 15px !important;
+  }
+}
+
 
 /* ■ 会社ロゴ列（PC） */
 .company-logos-row {
@@ -832,6 +848,7 @@ color: rgb(102, 102, 102);
     padding: 5px 0px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
