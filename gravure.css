@@ -614,7 +614,7 @@ iframe:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
-  margin: 5px 5px 5px 5px; 
+  margin: 5px 5px 5px 5px!importan; 
   box-sizing: border-box;
 }
 
@@ -661,16 +661,16 @@ iframe:hover {
 
 .member-content .furigana {
   margin-top: 0;
-  font-size: 0.7em;
+  font-size: 0.6em !important;
   color: #555;
-  line-height:1;
+  line-height:0.5 !important;
 }
 
 .member-content .name {
   margin: 0;
   font-size: 0.9em;
   color: #222;
-  line-height:1.7;
+  line-height:1.6!important;
 }
 
 .social {
@@ -706,7 +706,6 @@ iframe:hover {
     }
   }
 
-
   .social span {
     margin-right: 10px;
   }
@@ -714,6 +713,7 @@ iframe:hover {
 .x-date {
 font-size: 0.6em;
 line-height: 1;
+margin-top:3px;
 color: rgb(102, 102, 102);
 }
 
@@ -854,6 +854,7 @@ color: rgb(102, 102, 102);
     padding: 5px 0px;  /* タップしやすい領域 */
   }
 }
+
 
 
 
